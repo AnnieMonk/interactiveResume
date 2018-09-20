@@ -1,0 +1,144 @@
+.faceContainer {
+    animation: rotateHead 0.8s ease-in-out 5.9s backwards;
+  }
+  
+  .face div {
+    animation: 1s ease-in-out 0.5s face backwards,
+               1.5s ease-in-out 0.2s spawn backwards;
+  }
+  
+  .head div {
+    animation:
+               1.5s ease-in-out 2.5s 1 spawn backwards;
+  }
+  
+  .facial div {
+    animation: 1s ease-in-out 1.2s 1 moveRight backwards,
+               1.5s ease-in-out 1.2s 1 spawn backwards;
+  }
+  
+  .features div {
+    animation: 1.9s ease-in-out 4.0s 1 moveUp backwards,
+               2.9s ease-in-out 3.5s 1 spawn backwards;
+  }
+  .greeting{
+    animation: 0.5s ease-in 7s greet backwards,
+                infinite ease-in-out 8s wiggle
+  }
+
+  .celebration {
+    position: absolute;
+    left:50%;
+    top:50%;
+    width: 1000px;
+    height: 1000px;
+    background-color: white;
+    opacity: 0;
+    border-radius: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    animation: 0.8s ease-in-out 5.9s 1 celebrate backwards;
+  }
+  #dot:hover{
+    animation: wiggle 1s infinite;
+}
+  @keyframes celebrate {
+    0% {
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+  
+    20% {
+      opacity: 1;
+    }
+  
+    80% {
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+ 
+.nose:hover{
+    border: 4px white solid;
+    border-radius: 10px;
+    opacity: 0.7;
+    transform: none;
+    transition: 0.4s ease-in-out;
+    border-color: white;
+  }
+  
+
+  @keyframes rotateHead {
+      0% {
+        transform: rotate(0deg);
+      }
+  
+      20% {
+        transform: rotate(20deg);
+      }
+  
+      80% {
+        transform:  rotate(-25deg);
+      }
+  }
+  
+  @keyframes spawn {
+    0% {
+      border-radius: 0px;
+      width: 0;
+      height: 0;
+      opacity: 0;
+
+    }
+  
+    80% {
+      border-radius: 0px;
+    }
+  
+    100% {
+
+    }
+  }
+  
+  @keyframes face {
+    0% {
+      transform: scale(0.4) rotate(800deg);
+    }
+
+  }
+
+  @keyframes moveUp {
+    0% {
+      transform: rotate(-9000deg);
+      margin-top: 1000px;
+    }
+  
+    90% {
+      transform: rotate(90deg);
+      margin-top: -20px;
+    }
+  }
+  
+  
+  @keyframes moveRight {
+    0% {
+      margin-left: -1000px;
+    }
+    80% {
+      margin-left: 40px;
+      transform: scale(1.1);
+    }
+  }
+  @keyframes wiggle {
+    0% { transform: rotate(-5deg); }
+   25% { transform: rotate(5deg); }
+   50% { transform: rotate(-5deg); }
+   75% { transform: rotate(5deg); }
+  100% { transform: rotate(-5deg); }
+}
+@keyframes greet{
+    0%{font-size:0px}
+    100%{font-size:25px}
+}

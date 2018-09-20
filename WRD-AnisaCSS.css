@@ -1,0 +1,564 @@
+.ActualPage{
+    display:none;
+}
+body {
+  overflow: hidden;
+  background-color:rgb(62, 172, 107);
+ 
+}
+img { max-width: 100%; }
+.faceContainer {
+  position: absolute;
+  height: 63%;
+    width: 19%;
+  top: 20%;
+  left: 34%;
+ transform:rotate(9deg);
+}
+.hair div {
+background-color: #6d4320;
+  position: absolute;
+}
+
+.hair .under{
+    width: 40%;
+    height: 14%;
+    border-radius: 107px 50px 50px 0;
+    left: 44%;
+    top: 14%;
+    transform: skew(-9deg);
+    z-index: 1;
+    background: #69401f;;
+}
+.hair .side{
+    height: 27%;
+    width: 57%;
+    border-radius: 47px 0 50px 0px;
+    transform: rotate(-35deg) skew(-27deg);
+    top: 16%;
+    right: 51%;
+    z-index: 1;
+    
+}
+.hair .cube{
+    width: 27%;
+    height: 25%;
+    border-radius: 50% 0;
+    transform: rotate(-18deg);
+    top: 36%;
+    right: 82%
+}
+.hair .cube1{
+    width: 27%;
+    height: 17%;
+    border-radius: 50% 0;
+    
+    transform: skew(20deg) rotate(106deg);
+    top: 50%;
+    right: 84%;
+    z-index: 1;
+}
+.hair .cube2{
+    width: 28%;
+    height: 27%;
+    border-radius: 50% 0;
+    background:#ddbe68;
+    transform: rotate(142deg) skew(-18deg);
+    top: 54%;
+    right: 76%;
+    z-index: 1;
+}
+.hair .left-end{
+    height: 28%;
+    width: 37%;
+    border-radius: 47px 0 50px 0px;
+    transform: rotate(-35deg) skew(-27deg);
+    top: 73%;
+    left: 7%;
+    z-index: 0;
+    background: rgb(221, 190, 104);
+    
+}
+.hair .right-end{
+    height: 28%;
+    width: 37%;
+    border-radius: 47px 0 50px 0px;
+    transform: rotate(-35deg) skew(-27deg);
+    top: 71%;
+    right: 0%;
+    z-index: 0;
+    background:rgb(221, 190, 104); 
+}
+.hair .littlepart{
+    height: 21%;
+    width: 33%;
+    border-radius: 47px 0 50px 0px;
+    transform: rotate(-55deg) skew(-27deg);
+    top: 59%;
+    z-index: 0;
+    left: 84%;
+    background:rgb(221, 190, 104);
+}
+.hair .center{
+    height: 25%;
+    width: 64%;
+    border-radius: 50%;
+    top: 3%;
+    left: 28%;
+    z-index: 0;
+}
+.hair .right{
+    z-index: 0;
+    height: 40%;
+    width: 41%;
+    top: 15%;
+    left: 72%;
+    border-radius: 50%;
+}
+.face div {
+    position: absolute;
+    background-color: #FFCE6C;
+  }
+  .face .foundation {
+    width: 48%;
+    height: 43%;
+    left: 17%;
+    top: 27%;
+    border-radius: 40px;
+
+  }
+  .face .cheek-left {
+    width: 40%;
+    height: 24%;
+    left: 17%;
+    top: 60%;
+      border-radius: 0 0 0 85px;
+  }
+  .face .cheek-right {
+    width: 53.5%;
+    height: 23%;
+    left: 48%;
+    top: 61%;
+      border-radius: 75px 0;
+  }
+  .face .below-eye {
+    width: 54%;
+    height: 38%;
+    left: 47.8%;
+    top: 27%;
+      border-radius: 0 40px 0 0;
+  }
+
+  .features div{
+    position: absolute;
+  }
+  .features .nose {
+    background-color: #FFB53E;
+    width:12%;
+    height: 3%;
+    left: 62%;
+    top: 64%;
+    border-radius: 0 0 31px 32px;
+}
+
+.features .ear {
+    background-color: #FFCE6C;
+    width: 16%;
+    height: 16%;
+    left: 2%;
+    top: 47%;
+    border-radius: 20px 20px 4px 35px;
+}
+
+.features .eye {
+    width: 13%;
+    height: 8%;
+    top: 47%;
+    border-radius: 50%;
+    border: 0.8vw solid black;
+    border-bottom-color: #FFCE6C;
+    border-left-color: #FFCE6C;
+    transform: rotate(-45deg);
+}
+.features .eye-left {
+    left: 36%;
+  }
+  
+  .features .eye-right {
+    left: 74%;
+  }
+  .eyeliner-left{
+    background-color: black;
+    height: 4%;
+    width: 7%;
+    top: 50%;
+    left: 32%;
+    border-radius: 0 50px 50px;
+    transform: skew(31deg) rotate(15deg);
+}
+.eyeliner-right{
+    background-color: black;
+    height: 3.5%;
+    width: 7%;
+    top: 50%;
+    right: 1%;
+    border-radius: 50px 0 50px 50px;
+    transform: skew(-31deg) rotate(-9deg);
+}
+  .features .mouth-left {
+    background-color: #FF715A;
+    width: 16%;
+    height: 13%;
+    left: 53%;
+    top: 69%;
+    border-radius: 0 63px 17px 46px;
+    transform: skewX(20deg);
+}
+.features .mouth-right {
+    background-color: #FF715A;
+    width: 13%;
+    height: 12%;
+    right: 25%;
+    top: 70%;
+    border-radius: 46px 0px 17px 63px;
+    transform: skew(-20deg);
+  }
+  .features .mouth-top{
+    background-color: #FF715A;
+    width: 16%;
+    height: 7%;
+    left: 55%;
+    top: 70%;
+  }
+  .features .lips-top {
+    background-color: rgb(241, 141, 134);
+    width: 30%;
+    height: 2%;
+    left: 50%;
+    top: 69%;
+    border-radius: 0 0 50px 50px;
+}
+
+.features .teeth {
+    background-color: white;
+    width: 24%;
+    height: 1%;
+    left: 53%;
+    top: 71%;
+
+    border-radius: 0 0 50px 50px;
+}
+.eyebrow {
+  position: absolute;
+  border: none !important;
+}
+
+.eyebrow-left {
+    left: 31%;
+    top: 39%;
+    width: 23%;
+    height: 3%;
+    border-radius: 50px 50px 0px 50px;
+    transform: skew(31deg) rotate(7deg);
+}
+.eyebrow-right {
+    left: 76%;
+    top: 39%;
+    width: 23%;
+    height: 3%;
+    border-radius: 50px 50px 50px 0px;
+    transform: skew(-31deg) rotate(-5deg);
+}
+
+
+#dot{
+    position:absolute;
+    top:50%;
+    left:40%;
+    font-family:"Love Ya Like A Sister";
+    font-size:25px;
+    color:#76323F;
+    
+}
+
+
+.greeting{
+    position: absolute;
+    top: 10%;
+    left: 44%;
+    font-family: "Love Ya Like A Sister";
+    font-size: 1.5em;
+    color: #4C0021;
+}
+.navigationContainer{
+    position:absolute;
+    top:29%;
+    left:18%;
+    
+    display:none;
+    
+}
+.navigation{
+   position:absolute;
+   top:0;
+   left:0;
+   width:100px;
+   height:500px;
+}
+
+.izbor{
+    width:80px;
+    height:80px;
+    margin-bottom:5px;
+    padding:0;
+    background-color:#FFEDE1;
+    border-radius:40%;
+
+}
+.izbor p{
+    position:absolute;
+    left:-65px;
+    font-family:"Love Ya Like A Sister";
+    font-size:14px;
+    margin-top:30px;
+    color:#4C0021;
+}
+.izbor:active{
+    box-shadow:0px 2px 2px 2px rgb(77, 77, 77);
+    
+}
+.lighten{
+    background-color:white;
+}
+.podIzbor{
+    position:absolute;
+    display:none;
+    width: 36%;
+    height: 78%;
+    top:20%;
+    right:3%;
+    background-color:#E3F7F1;
+
+    border:2px solid rgb(168, 168, 168);
+    border-radius:0px 50px 50px 50px;
+}
+.izbor > img{
+    height:100%;
+    width:100%;
+    
+}
+.podIzbor>#sunflowerpic{
+    height: 23%;
+    position: absolute;
+    top: 67%;
+    right: 15px;
+}
+.podIzbor>#controlerpic{
+    position: absolute;
+    top: 66%;
+    left: 33px;
+    height: 18%;
+}
+.podIzbor>#drawingpic{
+    position: absolute;
+    top: 44%;
+    right: 20px;
+    height: 18%;
+}
+.podIzbor>#starwarspic{
+    position: absolute;
+    top: 40%;
+    left: 23px;
+    height: 16%;
+}
+.podIzbor>#meditatepic{
+    position: absolute;
+    top: 17%;
+    right: 20px;
+    height: 22%;
+}
+.podIzbor>#csspic{
+    position: absolute;
+    top: 11%;
+    left: 49px;
+    height: 16%;
+}
+#sunflower{
+    position: absolute;
+    top: 76%;
+    right: 27%;
+    font-family: "Love Ya Like A Sister";
+    font-size: 1em;
+    color: #4C0021;
+}
+#control{
+    position: absolute;
+    top: 68%;
+    left: 26%;
+    font-family: "Love Ya Like A Sister";
+    font-size: 1em;
+    color: #4C0021;
+}
+#drawing{
+    position: absolute;
+    top: 48%;
+    right: 27%;
+    font-family: "Love Ya Like A Sister";
+    font-size: 1em;
+    color: #4C0021;
+}
+#starwars{
+    position: absolute;
+    top: 43%;
+    left: 26%;
+    font-family: "Love Ya Like A Sister";
+    font-size: 1em;
+    color: #4C0021;
+}
+#meditate{
+    position: absolute;
+    top: 25%;
+    right: 27%;
+    font-family: "Love Ya Like A Sister";
+    font-size: 1em;
+    color: #4C0021;
+}
+#css{
+    position: absolute;
+    top: 15%;
+    left: 26%;
+    font-family: "Love Ya Like A Sister";
+    font-size: 1em;
+    color: #4C0021;
+}
+.AboutMe p{
+    font-family: "Love Ya Like A Sister";
+    font-size: 1em;
+    color: rgb(214, 169, 84);
+    margin:30px;
+}
+.podIzbor>#char{
+    font-size:20px;
+    margin-left:33%;
+    margin-top:13%;
+    color:rgb(255, 123, 0);
+}
+.podIzbor > ul{
+    margin-left:30%;
+}
+.podIzbor ul li{
+    font-family: "Love Ya Like A Sister";
+    font-size: 1em;
+    color:turquoise;
+    font-size:20px;
+    margin-bottom:10px;
+}
+.Gallery img{
+    height: 34%;
+    width: 24%;
+    margin: 7% 2% 0% 5%;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 darkgrey;
+    opacity:0.8;
+    border: 2px solid darkgrey;
+}
+
+.Gallery img:nth-child(6){
+    width:45%;
+}
+.Gallery img:nth-child(7){
+    width:36%;
+}
+.Gallery p{
+    position: absolute;
+    left: 44%;
+    font-family: "Love Ya Like A Sister";
+    font-size: 1.2em;
+    color: grey;
+    margin: 0;
+    
+}
+h1 {
+    text-transform: uppercase;
+    margin-left: 18%;
+    text-align: center;
+    border-bottom: 2px solid #c3c3c3;
+    border-radius:10px;
+    box-shadow: 0px 0px 100px rgba(0,0,0,0.05);
+    color: #555;
+    font-weight: 300;
+    width: 69%;
+    padding: 10px 0px 10px 0px;
+    letter-spacing: 4px;
+    font-family: "Love Ya Like A Sister";
+  }
+  .arrow-up {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 1px;
+      width: 0; 
+      height: 0;
+    margin-top: 10px;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid rgb(247, 247, 247,0.5);
+  }
+  form#contact{
+    position: absolute;
+    top: 22%;
+    left: 19%;
+    width: 68%;
+    height: 47%;
+    background-color: rgb(247, 247, 247,0.5);
+    opacity:0.8;
+    border-radius:10px;
+    border-bottom: 1px solid grey;
+  }
+  .form-control{
+    margin-left: 12px;
+    margin-top: 20px;
+      outline:none;
+      border:none;
+      font-family: "Love Ya Like A Sister";
+      border-radius: 10px;
+      border-bottom: 2px solid grey;
+      background-color: #f7f7f7;
+  }
+#message{
+    height: 109px;
+    width: 90%;
+    
+}
+#send{
+    margin-left: 40%;
+    width: 65px;
+    height: 23px;
+    background-color:rgb(194, 190, 190);
+}
+#send:hover{
+    background-color:whitesmoke;
+}
+.socialContainer{
+    position:absolute;
+    bottom:7px;
+    width:100%;
+    height:20%;
+}
+#instagram{
+    width:22%;
+    height:100%;
+    margin-left: 18%;
+}
+#kisnapraforgo{
+    position: absolute;
+    display:none;
+    top: 30%;
+    left: 45%;
+    font-family:"Love Ya Like A Sister";
+}
+.error{
+    border-bottom: 2px solid rgb(221, 132, 29);
+}
+
+/**/

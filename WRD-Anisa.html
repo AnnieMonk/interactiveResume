@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html>
+      <head>
+    <meta charset="UTF-8">
+    <title>Annie</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" type="text/css" href="WRD-AnisaCSS.css">
+    <link rel="stylesheet" type="text/css" href="WRD-AnisaAnimation.css">
+    <script src="jquery.js"></script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Love Ya Like A Sister" rel="stylesheet">
+    <script src="WRD-AnisaValidationJS.js"></script>
+  </head>
+  <body>
+    <div id="dot">Click to draw me!</div>
+    <div class="ActualPage">
+    <div class="faceContainer">
+      <div class="celebration"></div>
+      <div class="hair head">
+        <div class="hair under"></div>
+        <div class="hair side"></div>
+        <div class="hair cube"></div>
+        <div class="hair cube1"></div>
+        <div class="hair cube2"></div>
+        <div class="hair left-end"></div>
+        <div class="hair right-end"></div>
+        <div class="hair littlepart"></div>
+        <div class="hair center"></div>
+        <div class="hair right"></div>
+
+      </div>
+      <div class="face">
+        <div class="foundation"></div>
+        <div class="cheek-left"></div>
+        <div class="cheek-right"></div>
+        <div class="below-eye"></div>
+
+      </div>
+      <div class="features">
+        <div class="nose"></div>
+        <div class="ear"></div>
+        <div class="eye eye-left"></div>
+        <div class="eye eye-right"></div>
+        <div class="eyeliner-left"></div>
+        <div class="eyeliner-right"></div>
+        <div class="mouth-left"></div>
+        <div class="mouth-right"></div>
+        <div class="mouth-top"></div>
+        <div class="lips-top"></div>
+        <div class="teeth"></div>
+      </div>
+      <div class="hair facial">
+        <div class="eyebrow eyebrow-left">
+        </div>
+        <div class="eyebrow eyebrow-right">
+        </div>
+      </div>
+
+    </div>
+    <div class="greeting">Hi! Click on my nose!</div>
+
+    <div class="navigationContainer">
+      <div class="izbor first">
+        <p>About me</p>
+        <img src="slike/me.png">
+      </div>
+      <div class="izbor second">
+          <p>Likes</p>
+        <img src="slike/interest.png">
+
+      </div>
+      <div class="izbor third">
+          <p>Gallery</p>
+        <img src="slike/gallery.png">
+
+      </div>
+      <div class="izbor fourth">
+          <p>Contact</p>
+        <img src="slike/contact.png">
+
+      </div>
+
+    </div>
+    <div class="podIzbor AboutMe">
+      <p>My name is Anisa Ćirić and I'm an IT student at "Fakultet Informacijskih Tehnologija" in Mostar.
+        I'm 22 years old and I live in Sarajevo.
+      </p>
+      <p id="char">Characteristics: </p>
+      <ul>
+        <li>Artsy</li>
+        <li>Hardworking</li>
+        <li>Alien eyes</li>
+        <li>Introvert</li>
+        <li>Kind</li>
+      </ul>
+    </div>
+      <div class="podIzbor Likes">
+        <p id="sunflower">Sunflowers</p>
+        <img id="sunflowerpic" src="slike/sunflower.png">
+        <p id="control">Video games</p>
+        <img id="controlerpic" src="slike/control.png">
+        <p id="drawing">Drawing</p>
+        <img id="drawingpic" src="slike/tools.png">
+        <p id="starwars">Star Wars</p>
+        <img id="starwarspic" src="slike/starwars.png">
+        <p id="meditate">Meditation</p>
+        <img id="meditatepic" src="slike/meditate.png">
+        <p id="css">CSS</p>
+        <img id="csspic" src="slike/css.png">
+      </div>
+      <div class="podIzbor Gallery">
+        <img src="gallery/donaldduck.jpg">
+        <img src="gallery/meditation.jpg">
+        <img src="gallery/sunwoman.jpg">
+        <hr>
+        <p>My Art</p>
+        <img src="gallery/sunflower.jpg">
+        <img src="gallery/buddha.png">
+      </div>
+      <div class="podIzbor Contact">
+          <h1>CONTACT ME!</h1>
+          <div class="arrow-up"></div>
+         <form id="contact" action>
+                <input id="name" name="name" type="text" placeholder="NAME" class="form-control">
+                <input id="email" name="email" type="email" placeholder="EMAIL" class="form-control">
+                <textarea class="form-control" id="message" name="message" placeholder="MESSAGE"></textarea>
+                <button id="send" name="send" class="form-control" onclick="return validateForm();">send</button>
+         </form>
+
+         <div class="socialContainer">
+           <img id="instagram" src="slike/instagram-new.png">
+           <p id="kisnapraforgo">@kisnapraforgo</p>
+         </div>
+      </div>
+      <script src="WRD-AnisaJQ.js"></script>
+  </div>
+
+  </body>
+
+
+</html>
